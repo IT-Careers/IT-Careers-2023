@@ -1,6 +1,8 @@
-﻿class Program
+﻿using System.Diagnostics;
+
+class Program
 {
-    static int steps = 0;
+    static long count = 0;
 
     public static void SwapPermute(
         int index,
@@ -31,13 +33,14 @@
     {
         if (index >= currentPermutation.Length)
         {
-            Console.WriteLine(string.Join(" ", currentPermutation));
+            count++;
+            //Console.WriteLine(string.Join(" ", currentPermutation));
         }
         else
         {
             for (int i = 0; i < set.Length; i++)
             {
-                if (!used[i])
+                if(!used[i])
                 {
                     used[i] = true;
                     currentPermutation[index] = set[i];
@@ -55,12 +58,59 @@
         set[second] = temp;
     }
 
+    private static void IterativeVariate(string[] set, int[] currentVariation)
+    {
+        while(true)
+        {
+            count++;
+
+            int index = currentVariation.Length - 1;
+
+            while(index >= 0 && currentVariation[index] == set.Length - 1)
+            {
+                index--;
+            }
+
+            if(index < 0)
+            {
+                break;
+            } 
+
+            currentVariation[index]++; 
+
+            for (int i = index + 1; i < currentVariation.Length; i++)
+            {
+                currentVariation[i] = 0;
+            }
+        }
+    }
+
+    public static void Combine(
+    int index,
+    int currentElement,
+    string[] set,
+    string[] currentCombo)
+    {
+        if (index >= currentCombo.Length)
+        {
+            Console.WriteLine(string.Join(" ", currentCombo));
+        }
+        else
+        {
+            for (int i = currentElement; i < set.Length; i++)
+            {
+                currentCombo[index] = set[i];
+                Combine(index + 1, i + 1, set, currentCombo);
+            }
+        }
+    }
+
     public static void Main(string[] args)
     {
-        string[] set = { "A", "B", "B" };
+        //string[] set = { "A", "B", "C", "D" };
 
-        Permute(0, set, new bool[set.Length], new string[set.Length]);
+        string[] set = Enumerable.Range(0, 4).Select(x => ((char)(x + 65)).ToString()).ToArray();
 
-        Console.WriteLine($"Steps: {steps}");
+        Combine(0, 0, set, new string[2]);
     }
 }
