@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00. Demo.RecursionVsIterati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.Combinatorics", "00.Demo.Combinatorics\00.Demo.Combinatorics.csproj", "{D79BC502-63B4-4CD6-8166-B08FC16F39C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.DynamicProgramming", "00.Demo.DynamicProgramming\00.Demo.DynamicProgramming.csproj", "{928FF846-8EB0-4FF7-B231-A494874D571D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.DynamicProgramming", "00.Demo.DynamicProgramming\00.Demo.DynamicProgramming.csproj", "{928FF846-8EB0-4FF7-B231-A494874D571D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.LongestIncreasingSubsequence", "00.Demo.LongestIncreasingSubsequence\00.Demo.LongestIncreasingSubsequence.csproj", "{D004C0E4-BBE1-46D5-A584-EABD3BF93D61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.LongestIncreasingSubsequence", "00.Demo.LongestIncreasingSubsequence\00.Demo.LongestIncreasingSubsequence.csproj", "{D004C0E4-BBE1-46D5-A584-EABD3BF93D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.MoveDownRightSum", "00.Demo.MoveDownRightSum\00.Demo.MoveDownRightSum.csproj", "{5F454775-8AC6-4417-A17F-DDAC4A38B0DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D004C0E4-BBE1-46D5-A584-EABD3BF93D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D004C0E4-BBE1-46D5-A584-EABD3BF93D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D004C0E4-BBE1-46D5-A584-EABD3BF93D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F454775-8AC6-4417-A17F-DDAC4A38B0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F454775-8AC6-4417-A17F-DDAC4A38B0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F454775-8AC6-4417-A17F-DDAC4A38B0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F454775-8AC6-4417-A17F-DDAC4A38B0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
