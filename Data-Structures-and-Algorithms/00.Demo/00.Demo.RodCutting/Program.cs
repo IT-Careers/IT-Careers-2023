@@ -2,7 +2,7 @@
 {
     // Warm up for later https://www.hackerrank.com/challenges/equal/problem?isFullScreen=true
     
-    public static long GetPrice(long n, long currentLength, long[] prices)
+    public static long GetPrice(long n, long currentLength, long[] prices, long[] maxPrices)
     {
         if(currentLength > n)
         {
@@ -14,22 +14,47 @@
             return 0;
         }
 
+        if (maxPrices[n] >= 0)
+        {
+            return maxPrices[n];
+        }
+
         long currentPrice = prices[currentLength];
 
-        long remainingPrice = GetPrice(n - currentLength, currentLength, prices);
-        long otherPrice = GetPrice(n, currentLength + 1, prices);
+        long remainingPrice = GetPrice(n - currentLength, currentLength, prices, maxPrices);
+        long otherPrice = GetPrice(n, currentLength + 1, prices, maxPrices);
 
-        return Math.Max(currentPrice + remainingPrice, otherPrice);
+        long maxOfTwo = Math.Max(currentPrice + remainingPrice, otherPrice);
+
+        maxPrices[n] = Math.Max(maxPrices[n], maxOfTwo);
+
+        return maxPrices[n];
     }
     
     public static void Main(string[] args)
     {
-        long[] prices = { 0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30, 31, 34, 44, 50, 60, 70, 78, 90, 102, 120, 135, 145, 175, 200, 250, 300 };
+        long[] prices = new long[1000];
 
-        Console.WriteLine(prices.Length);
+        prices[1] = 1;
+        prices[2] = 5;
+        prices[3] = 8;
+
+        for (int i = 4; i < 1000; i++)
+        {
+            Random random = new Random();
+
+            prices[i] = prices[i - 1] + random.NextInt64(0, (long)Math.Sqrt(prices[i - 1])); 
+        }
 
         long n = long.Parse(Console.ReadLine());
 
-        Console.WriteLine(GetPrice(n, 1, prices));
+        long[] maxPrices = new long[n + 1];
+
+        for (int i = 0; i < maxPrices.Length; i++)
+        {
+            maxPrices[i] = -1;
+        }
+
+        Console.WriteLine(GetPrice(n, 1, prices, maxPrices));
     }
 }
