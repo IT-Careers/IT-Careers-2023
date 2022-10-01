@@ -1,8 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Numerics;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks.Dataflow;
+﻿using System.Diagnostics;
 
 public class Program
 {
@@ -10,6 +6,8 @@ public class Program
     public static int BetterGreedy(List<int> arr)
     {
         int[] pieces = { 5, 2, 1 }; // max(k) * k * n
+
+
         int min = arr.Min();
 
         int[] counts = new int[pieces.Max()];
