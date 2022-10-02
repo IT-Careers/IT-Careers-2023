@@ -25,11 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.Equal", "00.Demo.Eq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.Knapsack", "00.Demo.Knapsack\00.Demo.Knapsack.csproj", "{7855A3A9-F4A1-4F4C-83EA-43A060C676A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.Greedy", "00.Demo.Greedy\00.Demo.Greedy.csproj", "{E0833012-65B9-4840-8BDD-E1AEB817FC11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.Greedy", "00.Demo.Greedy\00.Demo.Greedy.csproj", "{E0833012-65B9-4840-8BDD-E1AEB817FC11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.SetCover", "00.Demo.SetCover\00.Demo.SetCover.csproj", "{D3708422-A809-4126-97EE-963D293D5452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.SetCover", "00.Demo.SetCover\00.Demo.SetCover.csproj", "{D3708422-A809-4126-97EE-963D293D5452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.LargestPermutation", "00.Demo.LargestPermutation\00.Demo.LargestPermutation.csproj", "{1055AEB4-C5A9-432E-B41D-FBD6EB1B9176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.LargestPermutation", "00.Demo.LargestPermutation\00.Demo.LargestPermutation.csproj", "{1055AEB4-C5A9-432E-B41D-FBD6EB1B9176}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.Tree", "00.Demo.Tree\00.Demo.Tree.csproj", "{32C52B1E-8760-4FB0-BB0D-3F9A7964A79B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.BinaryTree", "00.Demo.BinaryTree\00.Demo.BinaryTree.csproj", "{6D621769-F5BA-4BCB-A802-2FCEFF01BAC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.BinarySearch", "00.Demo.BinarySearch\00.Demo.BinarySearch.csproj", "{4B710301-42F4-4B3C-AD26-73DD2F4A68D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.BinarySearchTree", "00.Demo.BinarySearchTree\00.Demo.BinarySearchTree.csproj", "{2C496F58-F269-4039-9C52-CA1A8BB86791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +101,22 @@ Global
 		{1055AEB4-C5A9-432E-B41D-FBD6EB1B9176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1055AEB4-C5A9-432E-B41D-FBD6EB1B9176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1055AEB4-C5A9-432E-B41D-FBD6EB1B9176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C52B1E-8760-4FB0-BB0D-3F9A7964A79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C52B1E-8760-4FB0-BB0D-3F9A7964A79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C52B1E-8760-4FB0-BB0D-3F9A7964A79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C52B1E-8760-4FB0-BB0D-3F9A7964A79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D621769-F5BA-4BCB-A802-2FCEFF01BAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D621769-F5BA-4BCB-A802-2FCEFF01BAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D621769-F5BA-4BCB-A802-2FCEFF01BAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D621769-F5BA-4BCB-A802-2FCEFF01BAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B710301-42F4-4B3C-AD26-73DD2F4A68D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B710301-42F4-4B3C-AD26-73DD2F4A68D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B710301-42F4-4B3C-AD26-73DD2F4A68D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B710301-42F4-4B3C-AD26-73DD2F4A68D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C496F58-F269-4039-9C52-CA1A8BB86791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C496F58-F269-4039-9C52-CA1A8BB86791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C496F58-F269-4039-9C52-CA1A8BB86791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C496F58-F269-4039-9C52-CA1A8BB86791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
