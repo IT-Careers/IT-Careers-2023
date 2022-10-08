@@ -29,6 +29,7 @@ public class BinarySearchTree<T> where T : IComparable<T>
         this.Root = root;
     }
 
+
     public BinarySearchTreeNode<T> Root;
 
     private void InternalInsert(BinarySearchTreeNode<T> currentNode, T value)
