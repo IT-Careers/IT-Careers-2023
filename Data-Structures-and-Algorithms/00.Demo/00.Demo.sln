@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.BinarySearch", "00.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.BinarySearchTree", "00.Demo.BinarySearchTree\00.Demo.BinarySearchTree.csproj", "{2C496F58-F269-4039-9C52-CA1A8BB86791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.TopView", "00.Demo.TopView\00.Demo.TopView.csproj", "{244F10D6-EF08-4F21-9BD7-7072A4A791B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo.TopView", "00.Demo.TopView\00.Demo.TopView.csproj", "{244F10D6-EF08-4F21-9BD7-7072A4A791B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo.BTrees", "00.Demo.BTrees\00.Demo.BTrees.csproj", "{74CC63CD-8159-4EFD-A087-BEEFD9E73C53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{244F10D6-EF08-4F21-9BD7-7072A4A791B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{244F10D6-EF08-4F21-9BD7-7072A4A791B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{244F10D6-EF08-4F21-9BD7-7072A4A791B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CC63CD-8159-4EFD-A087-BEEFD9E73C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CC63CD-8159-4EFD-A087-BEEFD9E73C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CC63CD-8159-4EFD-A087-BEEFD9E73C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CC63CD-8159-4EFD-A087-BEEFD9E73C53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

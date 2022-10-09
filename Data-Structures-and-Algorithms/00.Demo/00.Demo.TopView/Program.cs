@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design.Serialization;
-using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Text;
 
 public class Program
 {
