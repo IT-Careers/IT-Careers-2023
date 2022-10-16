@@ -9,13 +9,14 @@ public class Program
 
         Random random = new Random();
 
-        for (int i = 0; i < 10000; i++)
+        for (int i = 0; i < 10; i++)
         {
             redBlackTree.Insert(random.Next(1, 1000000));
         }
 
-
         Console.WriteLine(redBlackTree.Max());
         Console.WriteLine(RedBlackTree<int>.stepsTaken);
+
+        redBlackTree.EachInOrder(Console.WriteLine);
     } 
 }

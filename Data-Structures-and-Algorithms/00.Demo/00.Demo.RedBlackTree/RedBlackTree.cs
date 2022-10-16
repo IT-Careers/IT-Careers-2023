@@ -90,8 +90,6 @@
             }
             else
             {
-                bool isInsertedRight = false;
-
                 if (value.CompareTo(currentNode.Value) < 0)
                 {
                     currentNode.LeftChild = this.InternalInsert(currentNode.LeftChild, value);
@@ -99,7 +97,6 @@
                 else
                 {
                     currentNode.RightChild = this.InternalInsert(currentNode.RightChild, value);
-                    isInsertedRight = true;
                 }
 
                 if (this.IsRed(currentNode.LeftChild) && this.IsRed(currentNode.LeftChild.RightChild))
@@ -142,5 +139,31 @@
             this.Root = this.InternalInsert(this.Root, value);
             this.Root.Color = RedBlackTreeNodeColor.Black;
         }
+
+        private void InternalEachInOrder(RedBlackTreeNode<T> currentNode, Action<T> action)
+        {
+            if (currentNode.LeftChild != null)
+            {
+                this.InternalEachInOrder(currentNode.LeftChild, action);
+            }
+
+            action.Invoke(currentNode.Value);
+
+            if (currentNode.RightChild != null)
+            {
+                this.InternalEachInOrder(currentNode.RightChild, action);
+            }
+        }
+
+        public void EachInOrder(Action<T> action)
+        {
+            if (this.Root == null)
+            {
+                return;
+            }
+
+            this.InternalEachInOrder(this.Root, action);
+        }
+
     }
 }
