@@ -143,12 +143,12 @@ namespace _00.Demo.BTrees
         
         public void Delete(T value)
         {
-            BTreeNode<T> node = this.InternalDelete(this.Root, value);
+            //BTreeNode<T> node = this.InternalDelete(this.Root, value);
 
-            if (node != null)
-            {
-                this.Root = node;
-            }
+            //if (node != null)
+            //{
+            //    this.Root = node;
+            //}
         }
     }
 }
