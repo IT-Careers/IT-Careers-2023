@@ -15,3 +15,5 @@ readUntil command process = do
     else do
         process currentLine
         readUntil command process
+
+parseInt x = read x :: Int
